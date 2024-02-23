@@ -1,0 +1,565 @@
+{% extends "base.html" %}
+{% load static wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-blogpage{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    {% block extra_css %}
+<link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+
+    <!-- Bootstrap core CSS -->
+     <!-- Additional CSS Files -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+     <link rel="stylesheet" href="{% static 'css/templatemo-chain-app-dev.css' %}">
+     <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+     <link rel="stylesheet" href="{% static 'css/animated.css' %}">
+    {% endblock %}
+<!--
+
+TemplateMo 570 Chain App Dev
+
+https://templatemo.com/tm-570-chain-app-dev
+
+-->
+
+   
+
+  </head>
+ {% block content %}
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+                <img src="{% static 'img/images/logo.png' %}" alt=""/>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#services">Services</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#pricing">Pricing</a></li>
+              <li class="scroll-to-section"><a href="#newsletter">Newsletter</a></li>
+              <li class="scroll-to-section"><a href="http://127.0.0.1:8000" style="color: #ffffff !important;" >Nosotros</a></li>
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  
+ 
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Blog Sena Racer</h2>
+                    <p>Un proyecto divertido para cambiar la persepcion de aprendices a la hora de conocer las instalaciones que ofrece el Sena para desarrollar futuros prometedores. </p>
+                    <p>Descarga nuestra app movil. </p>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="white-button scroll-to-section">
+                      <a href="https://drive.google.com/uc?export=download&id=1eX4kEbx4eCeXJ7pUzeKSINzJ1o-5zFh0">Descargar APK <i class="fab fa-google-play"></i></a>
+                  </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="{% static 'img/slider-dec.png' %}" alt=""/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4>Buenos <em>Servicios &amp; Oportunidades</em> para ti</h4>
+            <img src="{% static 'img/heading-line-dec.png' %}" alt=""/>
+            <p>Las mejores ideas mas competentes <a rel="nofollow" href="#" target="_blank">Unicas</a> Este blog te comunica nuestras mejores ideas y actualizaciones <a href="#" target="_parent">Aqui</a> y mucho mas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="service-item first-service">
+            <div class="icon"></div>
+            <h4>Buen Mantenimiento</h4>
+            <p>Sena Racer cuenta con un buen mantenimiento tanto actualizaciones e ideas nuevas</p>
+            <div class="text-button">
+              <a href="#">Ver mas <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service-item second-service">
+            <div class="icon"></div>
+            <h4>Servicios ARCore</h4>
+            <p>Contamos con los servicios de google de ARCore con el fin de implementar realidad aumentada .</p>
+            <div class="text-button">
+              <a href="#">Ver mas <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service-item third-service">
+            <div class="icon"></div>
+            <h4>Compatibilidad</h4>
+            <p>Tenemos compatibilidad con Android y dispositivos con <a rel="nofollow" href="https://developers.google.com/ar?hl=es-419" target="_blank">Arcore</a>.  Dona ahora a <a rel="nofollow" href="https://paypal.me/mauricio-rodriguez" target="_blank">Paypal</a>. Gracias.</p>
+            <div class="text-button">
+              <a href="#">Ver mas <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div id="clients" class="the-clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Nuestros principales <em>desarrolladores</em> presentes</h4>
+            <img src="{% static 'img/heading-line-dec.png' %}" alt=""/>
+            <img src="assets/images/" alt="">
+            <p>Te mostramos nuestros desarrolladores mas competentes en este proyecto.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-7 align-self-center">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Diego Diaz</h4>
+                            <span class="date">11 Noviembre 2023</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Desarrollador Frond-end</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.8</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Ximena Ortiz</h4>
+                            <span class="date">11 Noviembre 2023</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Desarrolador Back-end</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Andres Cuevas</h4>
+                            <span class="date">11 Noviembre 2023</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Lider de desarrollo</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.7</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Mauricio Rodriguez</h4>
+                            <span class="date">11 Noviembre 2023</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Full Stack</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">5.0</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div> 
+                <div class="col-lg-5">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <p>Programador encargado de diseñar y desarrollar la interfaz de usuario encargada en la realidad aumentada actualmente “Comprometido con Ximena Ortiz”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="https://scontent.fbog15-1.fna.fbcdn.net/v/t39.30808-6/290627376_5265982790157454_8005387892941472265_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeFhWb-L5jL5DZ2QveZsJHQqTg2G9ujQ-X9ODYb26ND5f2fpKpGlBybq2LwShiGrqugx9Qzse0ibyCfN0jDdQF_c&_nc_ohc=5v0Or7U5e8oAX9omtYF&_nc_ht=scontent.fbog15-1.fna&oh=00_AfD81v-P3J1ncLeHCn7_fE5vTDOGMFNNJWMaOc2PpUmXkQ&oe=6576F2E8" alt="Descripción de la imagen">
+                                <div class="right-content">
+                                  <h4>Diego Diaz</h4>
+                                  <span>Programador Frond-end</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                
+                                <p>Programadora encargada de desarrollar la conexion entre la interfaz de usuario y la base de datos actualmente “Comprometida con Diego Diaz”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="https://scontent.fbog15-1.fna.fbcdn.net/v/t39.30808-6/314413811_1120259262210562_2690866821912908322_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeGHo512QJpkQ4NOFzTiGeqVoF9ZuFv1dYWgX1m4W_V1hXMEht9IqG-75sJdpRB8DwgZdBiLbdOE8eehlcC8gvrC&_nc_ohc=qT2rlA6Zks8AX_r30Ca&_nc_ht=scontent.fbog15-1.fna&oh=00_AfCmwjbrUdq0G3zEKF7F2eGZ14ug3p4SmlyqyJerLYYE4g&oe=65766E3B" alt=""/>
+                                <div class="right-content">
+                                  <h4>Ximena Ortiz</h4>
+                                  <span>Programadora Back-end</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <p>Lider de desarrollo competente y organizado perdona de buen humor actualmente "Feliz soltero”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="https://scontent.fbog15-1.fna.fbcdn.net/v/t39.30808-6/369990833_247271448273675_6641974172146099958_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeF4nJGJh0bik31jlhBn_ygEP7yezOWD9nY_vJ7M5YP2dnjahSD8xIUbQAHFIl3notkYQ8RLUiMxNXKc7j_V6iNR&_nc_ohc=DI0YLY8ZVEoAX_vSvSf&_nc_oc=AQnJaWbBP4tkc_R60-1EIUg_xSQLGmz0V56g6S51N5WI0lfCfm7Px29yaXNKtb5TV5Y&_nc_ht=scontent.fbog15-1.fna&oh=00_AfAo0WiE_RV58YJwH3slxUX4q9amc5-YvaKJqETL5lLzWw&oe=65764EBE" alt=""/>
+                                <div class="right-content">
+                                  <h4>Andres Cuevas</h4>
+                                  <span>Lider de desarrollo</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <p>Desarrolador encargado de la base de datos y apoyo en la interfaz de usuario productivo y tranquilo actualmente "Soltero y feliz"</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="https://scontent-bog1-1.xx.fbcdn.net/v/t1.6435-9/194958378_548536812985156_1758523709496975486_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeEqKSCL7fg1rUMeRkJYcpb_Hk_Le7Wxc_EeT8t7tbFz8aTc5c9oTlX2elUZyp-2kw9Wtu-LiQqcspZVFW_IWst3&_nc_ohc=tPaZDgrPLn4AX9TBH12&_nc_ht=scontent-bog1-1.xx&oh=00_AfAWM4HsSz5jlrGTwWVQU4rgYxTiRsY001XEU0qqiz-qRg&oe=65775D28" alt=""/>
+                                <div class="right-content">
+                                  <h4>Mauricio Rodriguez</h4>
+                                  <span>Full Stack</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      
+                      </div>
+                    </li>
+                  </ul>
+                </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <br><br><br><br>
+  <div class="container-fluid py-5">
+  <div class="container py-5">
+    <div class="row">
+<!-- Search Form -->
+        <div class="mb-5">
+          <form action="">
+            <div class="input-group">
+              <input type="text" class="form-control form-control-lg" placeholder="Keyword">
+              <div class="input-group-append">
+                <span class="input-group-text bg-transparent text-primary"><i class="fa fa-search"></i></span>
+              </div>
+            </div>
+          </form>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+  <div class="row" style="margin: 40px;">
+    {% for post in blogpages %}
+        {% with post=post.specific %}
+        
+            <div class="col-lg-4" style="margin-bottom: 20px;">
+                <div class="service-item second-service" style="height: 500px; position: relative;">
+                    <div class="icon"></div>
+                    {% with post.main_image as main_image %}
+                        {% if main_image %}
+                            <div class="card-img-top">
+                                {% image main_image fill-320x200 style="border-radius: 55px" %}
+                            </div>
+                        {% endif %}
+                    {% endwith %}
+                    <h4>{{ post.title }}</h4>
+                    <p id="post-body">{{ post.body|striptags|truncatewords:20 }}</p>
+                    <div class="text-button" style="position: absolute; bottom: 10px; left: 10px;">
+                        <a href="{% pageurl post %}">Ver mas <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        {% endwith %}
+    {% endfor %}
+</div>
+
+<div class="col-12">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination pagination-lg justify-content-center mb-0">
+                                  <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
+
+
+
+
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Únase a nuestra lista de correo para recibir noticias &amp; novedades. Últimas tendencias</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-3">
+          <form id="search" action="#" method="GET">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <input type="address" name="address" class="email" placeholder="Correo Electronico..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <button type="submit" class="main-button">Conoce mas <i class="fa fa-angle-right"></i></button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="footer-widget">
+            <h4>Contactanos</h4>
+            <a href="https://www.google.com/maps/place/SENA+Mosquera+-+Centro+de+Biotecnología+Agropecuaria+(CBA)/@4.6948022,-74.2157612,15.96z/data=!4m6!3m5!1s0x8e3f9d58cf6e291b:0x8946ec678fcf04b4!8m2!3d4.6957037!4d-74.215626!16s%2Fg%2F119wh0_qr?entry=ttu"
+                    target="_blank" style="color: white; text-decoration: none;">
+                    <p>4.6959376902813075, -74.21566160706303</p>
+                </a>
+            <p><a href="https://wa.me/+573242332549?text=Hola,%20este%20es%20un%20mensaje%20predefinido.%20Saludos!"
+              target="_blank" style="color: white; text-decoration: none;">324 2332543</a></p>
+            <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=blog@blog.com&su=Asunto&body=Hola,%20este%20es%20un%20correo%20predefinido.%20Saludos!"
+              target="_blank" style="color: white; text-decoration: none;">
+              <p>blog@blog.com</p>
+          </a></p>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="footer-widget">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Free Apps</a></li>
+              <li><a href="#">App Engine</a></li>
+              <li><a href="#">Programming</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">App News</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">App Dev Team</a></li>
+              <li><a href="#">Digital Web</a></li>
+              <li><a href="#">Normal Apps</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer-widget">
+            <h4>Fuente HTML</h4>
+            <div class="logo">
+                <img src="{% static 'img/white-logo.png' %}" alt=""/>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>Copyright © 2022 Chain App Dev Company. All Rights Reserved. 
+              
+          <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">TemplateMo</a></p>
+          <p>Copyright © 2023 Sena Racer. Todos los derechos reservados. 
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <svg id="scroll-to-top" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+    style="fill: rgb(46, 71, 185); position: fixed; right: 0; bottom: 0;">
+    <path
+        d="M5 21h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zm7-13 5 6H7l5-6z">
+    </path>
+</svg>
+
+<script>
+var scrollToTopIcon = document.getElementById('scroll-to-top');
+
+// Función para desplazarse rápidamente hacia arriba
+function scrollToTop() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+// Ocultar el icono cuando se llega a la parte superior de la página
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset === 0) {
+        scrollToTopIcon.style.display = 'none';
+    } else {
+        scrollToTopIcon.style.display = 'block';
+    }
+});
+
+// Desplazarse hacia arriba cuando se hace clic en el icono
+scrollToTopIcon.addEventListener('click', scrollToTop);
+</script>
+
+  </footer>
+
+
+  <!-- Scripts -->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/owl-carousel.js' %}"></script>
+<script src="{% static 'js/animation.js' %}"></script>
+<script src="{% static 'js/imagesloaded.js' %}"></script>
+<script src="{% static 'js/popup.js' %}"></script>
+<!--<script src="{% static 'js/carousel.js' %}"></script>-->
+<script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,393 @@
+<!-- © AlexCG Design | Jordan Alexander-->
+
+{% extends "base.html" %}
+{% load static %}
+{% load static wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+<head>
+    <title>Página web AlexCG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    {% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/home_page.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/templatemo-chain-app-dev.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animated.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+
+    {% endblock %}
+</head>
+{% block content %}
+
+<body>
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active" style="color: #ffffff !important;">Inicio</a></li>
+                            <li class="scroll-to-section"><a href="#services" style="color: #ffffff !important;">Nuestro Blog</a></li>
+                            <li class="scroll-to-section"><a href="#about" style="color: #ffffff !important;">Nuestro Valor</a></li>
+                            <li class="scroll-to-section"><a href="#clientes" style="color: #ffffff !important;">Comentarios</a></li>
+                            <li class="scroll-to-section"><a href="#newsletter" style="color: #ffffff !important;">servicios</a></li>
+                            <li class="scroll-to-section"><a href="blog" style="color: #ffffff !important;">Blog</a></li>
+
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span></span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header>
+        <div id="menu-container">
+            <div id="menu-button"><img id="menu-icon"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAGtJREFUSEvtlcENwCAMA/FmjNbRupmRkPgU+jOYhxnAVo6LgmJ6MPWWFB8jH9QdNclHyRzAlLdETZLi4qnnrmLltH9ZsXpYXZW4AbzfvLvkcq6TB7Xyf7NOg0Cs9p7FWL2DQM7iDqrLTBvqBq+mKB87ZjKAAAAAAElFTkSuQmCC" />
+            </div>
+
+        </div>
+        <section class="textos-header">
+            <h1>Potencia tu saber al menos un 200%</h1>
+            <h2>Con nuestro Blog</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff; "></path>
+            </svg>
+        </div>
+    </header>
+    <div id="modal" class="popupContainer" style="display:none;">
+        <div class="popupHeader">
+            <span class="header_title">Login</span>
+            <span class="modal_close"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+
+    <main>
+        <section id="services" class="contenedor sobre-nosotros">
+            <h2 class="titulo">Nuestro Blog</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="{% static 'img/ilustracion2.svg' %}" alt="" class="imagen-about-us" />
+                <div class="contenido-textos">
+                    <h3><span>1</span>La mejor Comunidad</h3>
+                    <p>Te brindamos la oportunidad de interactuar con personas que comparten tus intereses, gustos y
+                        pasiones.</p>
+                    <h3><span>2</span>Publicaciones de Calidad</h3>
+                    <p>Se aplican criterios de evaluación y selección, como el peer review o la indexación en bases de
+                        datos internacionales.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestro Valor</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="{% static 'img/img1.jpg' %}" alt="" />
+                        <div class="hover-galeria">
+                            <img src="{% static 'img/icono1.png' %}" alt="" />
+
+                            <p>Dedicación</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'img/img2.jpg' %}" alt="" />
+
+                        <div class="hover-galeria">
+                            <img src="{% static 'img/icono1.png' %}" alt="" />
+                            <p>Arte</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'img/img3.jpg' %}" alt="" />
+                        <div class="hover-galeria">
+                            <img src="{% static 'img/icono1.png' %}" alt="" />
+                            <p>Convicción</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'img/deber.jpeg' %}" alt="" />
+
+                        <div class="hover-galeria">
+                            <img src="{% static 'img/icono1.png' %}" alt="" />
+                            <p>Deber</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'img/img4.jpg' %}" alt="" />
+
+                        <div class="hover-galeria">
+                            <img src="{% static 'img/icono1.png' %}" alt="" />
+                            <p>Trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'img/img5.jpg' %}" alt="" />
+
+                        <div class="hover-galeria">
+                            <img src="{% static 'img/icono1.png' %}" alt="" />
+                            <p>Crecimiento</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'img/img6.jpg' %}" alt="" />
+
+                        <div class="hover-galeria">
+                            <img src="{% static 'img/icono1.png' %}" alt="" />
+                            <p>Ayuda</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="{% static 'img/img7.jpg' %}" alt="" />
+
+                        <div class="hover-galeria">
+                            <img src="{% static 'img/icono1.png' %}" alt="" />
+                            <p>Futuro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="clientes" class="clientes contenedor">
+            <h2 class="titulo">Que dicen nuestros clientes</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="{% static 'img/face1.jpg' %}" alt="" />
+
+                    <div class="contenido-texto-card">
+                        <h4>Clara</h4>
+                        <p>Este blog es un espacio donde puedes encontrar artículos interesantes y útiles sobre diversos
+                            temas, como tecnología, educación, salud, negocios y más, me gusta mucho sus temas. 😊</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/juan.jpg' %}" alt="" />
+                    <div class="contenido-texto-card">
+                        <h4>Juan</h4>
+                        <p>El blog tiene un estilo claro y ameno, y ofrece recursos gratuitos, enlaces a otras páginas
+                            web y una comunidad de lectores. Me gusta mucho este blog.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 25px; "></div>
+            <div class="cards">
+                <div class="card">
+                    <img src="{% static 'img/face1.jpg' %}" alt="" />
+
+                    <div class="contenido-texto-card">
+                        <h4>Sofia</h4>
+                        <p>El blog tiene un tono cercano y divertido, y ofrece recursos gratuitos, enlaces a otras
+                            páginas web y una comunidad de seguidores. Me entretiene mucho.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/Jhon.webp' %}" alt="" />
+                    <div class="contenido-texto-card">
+                        <h4>Jhon</h4>
+                        <p>El blog tiene un estilo dinámico y entretenido, y ofrece recursos gratuitos, enlaces a otras
+                            páginas web y una comunidad de usuarios. Me fascina este blog</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="newsletter" class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestros servicios</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="{% static 'img/ilustracion1.svg' %}" alt="" />
+                        <h3>Informar</h3>
+                        <p>Nuestro servicio de informar te ofrece noticias veraces y relevantes sobre diversos temas de
+                            actualidad. Contamos con un equipo de periodistas profesionales que investigan, analizan y
+                            redactan las noticias con rigor y objetividad.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="{% static 'img/ilustracion4.svg' %}" alt="" />
+                        <h3>Conocer</h3>
+                        <p>Nuestro servicio de conocer te permite aprender sobre diversos temas de interés, desde
+                            ciencia y cultura hasta deportes y ocio. Contamos con un equipo de expertos que elaboran
+                            contenidos educativos, entretenidos y de calidad. Puedes acceder a nuestros cursos,
+                            podcasts, vídeos y artículos desde cualquier dispositivo y a tu propio ritmo.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="{% static 'img/ilustracion3.svg' %}" alt="" />
+                        <h3>Entretener</h3>
+                        <p>Nuestro servicio de entretener te ofrece una variedad de opciones para divertirte y
+                            relajarte. Contamos con un equipo de creadores que generan contenidos originales, creativos
+                            y de calidad. Puedes disfrutar de nuestras noticias, articulos, verdadesy videos desde
+                            cualquier dispositivo y a tu gusto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <div class="section-heading">
+                <h4>Únase a nuestra lista de correo para recibir noticias &amp; novedades. Últimas tendencias</h4>
+              </div>
+            </div>
+            <div class="col-lg-6 offset-lg-3">
+              <form id="search" action="#" method="GET">
+                <div class="row">
+                  <div class="col-lg-6 col-sm-6">
+                    <fieldset>
+                      <input type="address" name="address" class="email" placeholder="Correo Electronico..." autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6 col-sm-6">
+                    <fieldset>
+                      <button type="submit" class="main-button">Conoce mas <i class="fa fa-angle-right"></i></button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="footer-widget">
+                <h4>Contactanos</h4>
+                <a href="https://www.google.com/maps/place/SENA+Mosquera+-+Centro+de+Biotecnología+Agropecuaria+(CBA)/@4.6948022,-74.2157612,15.96z/data=!4m6!3m5!1s0x8e3f9d58cf6e291b:0x8946ec678fcf04b4!8m2!3d4.6957037!4d-74.215626!16s%2Fg%2F119wh0_qr?entry=ttu"
+                    target="_blank" style="color: white; text-decoration: none;">
+                    <p>4.6959376902813075, -74.21566160706303</p>
+                </a>
+                <p><a href="https://wa.me/+573242332549?text=Hola,%20este%20es%20un%20mensaje%20predefinido.%20Saludos!"
+                  target="_blank" style="color: white; text-decoration: none;">324 2332543</a></p>
+                <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=blog@blog.com&su=Asunto&body=Hola,%20este%20es%20un%20correo%20predefinido.%20Saludos!"
+                  target="_blank" style="color: white; text-decoration: none;">
+                  <p>blog@blog.com</p>
+              </a></p>
+              </div>
+            </div>
+            
+            <div class="col-lg-4">
+              <div class="footer-widget">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><a href="#">Free Apps</a></li>
+                  <li><a href="#">App Engine</a></li>
+                  <li><a href="#">Programming</a></li>
+                  <li><a href="#">Development</a></li>
+                  <li><a href="#">App News</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">App Dev Team</a></li>
+                  <li><a href="#">Digital Web</a></li>
+                  <li><a href="#">Normal Apps</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="footer-widget">
+                <h4>Fuente HTML</h4>
+                <div class="logo">
+                    <img src="{% static 'img/white-logo.png' %}" alt=""/>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="copyright-text">
+                <p>Copyright © 2022 Chain App Dev Company. All Rights Reserved. 
+                  
+              <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">TemplateMo</a></p>
+              <p>Copyright © 2023 Sena Racer. Todos los derechos reservados. 
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <svg id="scroll-to-top" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+        style="fill: rgb(46, 71, 185); position: fixed; right: 0; bottom: 0;">
+        <path
+            d="M5 21h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zm7-13 5 6H7l5-6z">
+        </path>
+    </svg>
+    
+    <script>
+    var scrollToTopIcon = document.getElementById('scroll-to-top');
+    
+    // Función para desplazarse rápidamente hacia arriba
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    
+    // Ocultar el icono cuando se llega a la parte superior de la página
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset === 0) {
+            scrollToTopIcon.style.display = 'none';
+        } else {
+            scrollToTopIcon.style.display = 'block';
+        }
+    });
+    
+    // Desplazarse hacia arriba cuando se hace clic en el icono
+    scrollToTopIcon.addEventListener('click', scrollToTop);
+    </script>
+    
+      </footer>
+    
+</body>
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/owl-carousel.js' %}"></script>
+<script src="{% static 'js/animation.js' %}"></script>
+<script src="{% static 'js/imagesloaded.js' %}"></script>
+<script src="{% static 'js/popup.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+</html>
+<!-- <body>
+    <div class="header">
+        <h1>Sena Racer</h1>
+    </div>
+    <div class="container">
+        <div class="text-content">
+            <div class="card">
+                <h1> {{ page.body|richtext }}</h1>
+                <p>Make your ideas happen and let them fly</p>
+            </div>
+        </div>
+        <div class="image-content">
+            <div class="carousel">
+                <img class="carousel-image" src="https://digitalwebpanama.com/wp-content/uploads/2022/12/blog.png" alt="Imagen 1">
+                <img class="carousel-image" src="https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/anatomy-of-a-blog-post-deconstructed-header.jpg" alt="Imagen 2">
+                <img class="carousel-image" src="https://thedreamelite.com/wp-content/uploads/2020/02/GettyImages-905508166-5c8a523fc9e77c00010c231d.jpg" alt="Imagen 3">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="wrapper">
+            <a class="button" href="http://127.0.0.1:8000/blog">See more!</a>
+        </div>
+        
+       
+        <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <script src="{% static 'js/carousel.js' %}"></script>
+</body>-->
+{% endblock %}

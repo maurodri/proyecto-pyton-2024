@@ -1,0 +1,67 @@
+{% extends "base.html" %} {% load static wagtailcore_tags wagtailimages_tags %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/blog_tag_index_page.css' %}" />
+{% endblock %} {% block content %} {% if request.GET.tag %} {% endif %}
+
+<div class="container">
+  {% if request.GET.tag %}
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="index-header__title">Blog</h1>
+    </div>
+    <div class="col-md-12">
+      <p class="index-header__introduction">
+        Ver todas las publicaciones del blog ordenadas por etiqueta
+        <span class="blog-tags__tag">{{ request.GET.tag }}</span>.
+      </p>
+    </div>
+  </div>
+  {% endif %} {% if page.get_child_tags %}
+  <ul class="blog-tags">
+    <li><span class="blog-tags__pill blog-tags__pill--selected">Todo</span></li>
+    {% for tag in page.get_child_tags %}
+    <li>
+      <a
+        class="blog-tags__pill"
+        aria-label="Filter by tag name {{ tag }}"
+        href="{{ tag.url }}"
+        >{{ tag }}</a
+      >
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <div class="container-fluid py-5">
+    <div class="container py-5">
+      {% for blogpage in blogpages %}
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <img
+            class="img-fluid rounded mb-4 mb-lg-0"
+            src="{% static 'img/about.jpg' %}"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-7">
+          <div class="text-left mb-4">
+            <h5
+              class="text-primary text-uppercase mb-3"
+              style="letter-spacing: 5px"
+            >
+              Articulo
+            </h5>
+            <h2><a href="{% pageurl blogpage %}">{{ blogpage.title }}</a></h2>
+          </div>
+          <p>Revisado: {{ blogpage.latest_revision_created_at }}</p>
+        </div>
+      </div>
+      <br /><br /><br /><br /><br /><br />
+      {% empty %}
+      <p>No se encontraron páginas con esa etiqueta.</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}
